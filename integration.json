@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "df316c92baab221b3aea017ccfe87bfbbc3e476c6c955356a72a933905ae6637",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://developers.smartsheet.com/_spec/api/resource_management/openapi.yaml"
+  ],
+  "id": "10000ft-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "10,000ft (Resource Management by Smartsheet) MCP setup and connection checker",
+  "description": "Generate 10,000ft (Resource Management by Smartsheet) MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "10000ft",
+  "appName": "10,000ft (Resource Management by Smartsheet)",
+  "providerDocs": "https://developers.smartsheet.com/_spec/api/resource_management/openapi.yaml",
+  "providerWebsite": "https://www.smartsheet.com/platform/resource-management",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://developers.smartsheet.com/api/resource_management/getting-started/authentication",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-10000ft-mcp"
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-10000ft",
+      "description": "Connect AI agents to 10,000ft (Resource Management by Smartsheet) using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-10000ft/SKILL.md": "9bea92c30e5b249e69f1ce98b4ea59db1788b47fc8023ec4951101b5346338da"
+  }
+}

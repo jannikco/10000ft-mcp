@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "df316c92baab221b3aea017ccfe87bfbbc3e476c6c955356a72a933905ae6637",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developers.smartsheet.com/_spec/api/resource_management/openapi.yaml"
-  ],
   "id": "10000ft-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "10,000ft (Resource Management by Smartsheet) MCP setup and connection checker",
-  "description": "Generate 10,000ft (Resource Management by Smartsheet) MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare 10,000ft (Resource Management by Smartsheet) for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-10000ft-mcp",
+  "sourceRevision": "d611e90143b2862bf877d4e0580c61372a7705442e5d26333545db6109e38726",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developers.smartsheet.com/_spec/api/resource_management/openapi.yaml"
+  ],
+  "utility": {
+    "problem": "Prepare 10,000ft (Resource Management by Smartsheet) and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "10000ft",
   "appName": "10,000ft (Resource Management by Smartsheet)",
-  "providerDocs": "https://developers.smartsheet.com/_spec/api/resource_management/openapi.yaml",
-  "providerWebsite": "https://www.smartsheet.com/platform/resource-management",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developers.smartsheet.com/api/resource_management/getting-started/authentication",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-10000ft-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }
